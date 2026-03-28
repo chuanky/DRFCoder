@@ -1,0 +1,28 @@
+datasets/
+outputs/
+*.log
+unsloth_compiled_cache/
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# latex
+*.blg
+*.aux
+*.bbl
+*.bcf
+*.out
+*.xml
+*.pdf
+*.gz
+*.png
+*.fls
+*.fdb_latexmk

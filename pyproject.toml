@@ -1,0 +1,21 @@
+[project]
+name = "DRFCoder"
+version = "0.1.0"
+description = "official implementation of **Dynamic Reasoning Fusion (DRF)**"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "datasets==3.6.0",
+    "jsonlines>=4.0.0",
+    "matplotlib>=3.10.8",
+    "py-trees>=2.4.0",
+    "seaborn>=0.13.2",
+    "vllm>=0.18.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["lcb_runner", "src"]
