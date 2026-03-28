@@ -251,7 +251,6 @@ class RobustRefiner(py_trees.behaviour.Behaviour):
         self.context.generated_code = code
 
         qid = self.context.problem.question_id
-        # 使用 public_only=True，确保在健壮性优化阶段我们只关注公开测试的反馈，避免过拟合私有测试
         result = self.context.lcb_env.execute(qid, output, public_only=True)
         self.context.add_feedback(result)
 
